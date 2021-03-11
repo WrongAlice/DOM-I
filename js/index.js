@@ -40,22 +40,50 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-
+//images
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
- let snippet = document.getElementById("cta-img")
+let snippet = document.getElementById("cta-img")
 snippet.setAttribute('src', siteContent["cta"]["img-src"]);
 
- let accent = document.getElementById("middle-img")
+let accent = document.getElementById("middle-img")
  accent.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-// let parentElement1 = document.querySelector("nav");
-// parentElement1.appendChild(home)
+
+ 
+ //contact
+ const contact = document.querySelectorAll(".contact p");
+ contact[0].textContent = siteContent["contact"]["address"]
+ contact[1].textContent = siteContent["contact"]["phone"]
+ contact[2].textContent = siteContent["contact"]["email"]
+
+
+ const contactHeader = document.querySelector(".contact h4")
+ contactHeader.textContent = siteContent["contact"]["contact-h4"]
+
+ const mainHeader = document.querySelectorAll(".text-content h4")
+ const mainP = document.querySelectorAll(".text-content p")
+
+ mainHeader[0].textContent = siteContent["main-content"]["features-h4"]
+ mainP[0].textContent = siteContent["main-content"]["features-content"]
+
+ mainHeader[1].textContent = siteContent["main-content"]["about-h4"]
+ mainP[1].textContent = siteContent["main-content"]["about-content"]
 
 
 
+ mainHeader[2].textContent = siteContent["main-content"]["services-h4"]
+ mainP[2].textContent = siteContent["main-content"]["services-content"]
 
+ mainHeader[3].textContent = siteContent["main-content"]["product-h4"]
+ mainP[3].textContent = siteContent["main-content"]["product-content"]
+
+ mainHeader[4].textContent = siteContent["main-content"]["vision-h4"]
+ mainP[4].textContent = siteContent["main-content"]["vision-content"]
+
+
+//navbar
 const navArr = document.body.querySelectorAll('a');
 
 navArr[0].textContent = 'Services';
@@ -65,20 +93,19 @@ navArr[3].textContent = 'Features';
 navArr[4].textContent = 'About';
 navArr[5].textContent = 'Contact';
 
-  let headline = document.getElementByTag('h1')
-  headline.setAttribute = ('src', siteContent["cta"][h1])
+let headline = document.getElementByTag('h1')
+  headline.setAttribute = ('src', siteContent["cta"]["h1"])
 
-  nav.forEach((colorG) => (colorG.style.color = "green"));
-
+ 
 //button
   const button = document.querySelector("button");
-  button.textContent = "Get Started"
+  button.textContent = "Get Started";
 
   //title
   const title = document.querySelector("h1");
   title.textContent = siteContent["cta"]["h1"];
 
-  //PP
+  //Paragraphs
   const contentPar = document.querySelectorAll('.main-content p');
   contentPar[0].textContent = siteContent['main-content']['features-content']
   contentPar[1].textContent = siteContent['main-content']['about-content']
@@ -86,24 +113,15 @@ navArr[5].textContent = 'Contact';
   contentPar[3].textContent = siteContent['main-content']['product-content']
 
  
-// const contact = document.querySelectorAll('.contact h4')
-// const details = document.querySelectorAll('.contact p')
 
-// contact[0].textContent = siteContent['contact']['contact-h4']
-// contact[1].textContent = siteContent['contact']['address']
-// contact[2].textContent = siteContent['contact']['phone']
-// contact[3].textContent = siteContent['contact']['email']
 
-// let button = document.querySelector("button");
-//  button.textContent = siteContent["cta"]["button"];
 
- const footer = document.querySelectorAll('footer p');
- footer[0].textContent = siteContent['footer']['copyright']
+
+ const footer = document.querySelector("footer p");
+ footer.textContent = siteContent["footer"]["copyright"]
 
 
       
-// let contact = document.querySelector('section.contact');
-// contact.querySelector('h4').textContent = siteContent['contact']['contact-h4']
 
 
  
