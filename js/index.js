@@ -39,6 +39,8 @@ const siteContent = {
   },
 };
 
+
+
 // Example: Update the img src for the logo
 //images
 let logo = document.getElementById("logo-img");
@@ -50,7 +52,14 @@ snippet.setAttribute('src', siteContent["cta"]["img-src"]);
 let accent = document.getElementById("middle-img")
  accent.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+//  const words = document.querySelectorAll("h1")
+//  words.textContent = siteContent["h1"]["DOM IS AWESOME"]
 
+ let words = document.querySelector(".cta-text h1")
+  words.textContent = siteContent["cta"]["h1"]
+
+//   let button = document.querySelector(".cta-text button")
+//  button.textContent = siteContent["cta"]["button"]
  
  //contact
  const contact = document.querySelectorAll(".contact p");
@@ -112,7 +121,7 @@ let headline = document.getElementByTag('h1')
   contentPar[2].textContent = siteContent['main-content']['main-content']
   contentPar[3].textContent = siteContent['main-content']['product-content']
 
- 
+
 
 
 
