@@ -81,12 +81,12 @@ let accent = document.getElementById("middle-img")
 
  //middle info paragraphs
   //Paragraphs
-  const contentPar = document.querySelectorAll('.main-content p');
-  contentPar[0].textContent = siteContent['main-content']['features-content']
-  contentPar[1].textContent = siteContent['main-content']['about-content']
-  contentPar[2].textContent = siteContent['main-content']['services-content']
-  contentPar[3].textContent = siteContent['main-content']['product-content']
-  contentPar[4].textContent = siteContent['main-content']['vision-content']
+  // const contentPar = document.querySelectorAll('.main-content p');
+  // contentPar[0].textContent = siteContent['main-content']['features-content']
+  // contentPar[1].textContent = siteContent['main-content']['about-content']
+  // contentPar[2].textContent = siteContent['main-content']['services-content']
+  // contentPar[3].textContent = siteContent['main-content']['product-content']
+  // contentPar[4].textContent = siteContent['main-content']['vision-content']
 
 
  const mainHeader = document.querySelectorAll(".text-content h4")
@@ -107,8 +107,8 @@ let accent = document.getElementById("middle-img")
  mainHeader[4].textContent = siteContent["main-content"]["vision-h4"]
  mainP[4].textContent = siteContent["main-content"]["vision-content"]
 
-//let headline = document.getElementByTag('h1')
- // headline.setAttribute = ('src', siteContent["cta"]["h1"])
+let headline = document.getElementByTag('h1')
+ headline.setAttribute = ('src', siteContent["cta"]["h1"])
  
  //contact
 
