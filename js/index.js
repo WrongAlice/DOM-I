@@ -43,35 +43,47 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 //images
+
+
+
+//navbar
+const navArr = document.querySelectorAll('a');
+
+navArr[0].textContent = siteContent["nav"]["nav-item-1"]
+navArr[1].textContent = siteContent["nav"]["nav-item-2"]
+navArr[2].textContent = siteContent["nav"]["nav-item-3"]
+navArr[3].textContent = siteContent["nav"]["nav-item-4"]
+navArr[4].textContent = siteContent["nav"]["nav-item-5"]
+navArr[5].textContent = siteContent["nav"]["nav-item-6"]
+
+
+//logo 
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
+
+//CTA text h1
+   const title = document.querySelector("h1");
+   title.textContent = siteContent["cta"]["h1"];
+
+   //cta text button
+   const button = document.querySelector("button");
+   button.textContent = siteContent["cta"]["button"]
+
+
+//CTA img
 let snippet = document.getElementById("cta-img")
 snippet.setAttribute('src', siteContent["cta"]["img-src"]);
 
+//middle image
 let accent = document.getElementById("middle-img")
  accent.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-//  const words = document.querySelectorAll("h1")
-//  words.textContent = siteContent["h1"]["DOM IS AWESOME"]
-
- let words = document.querySelector(".cta-text h1")
-  words.textContent = siteContent["cta"]["h1"]
-
-//   let button = document.querySelector(".cta-text button")
-//  button.textContent = siteContent["cta"]["button"]
- 
- //contact
- const contact = document.querySelectorAll(".contact p");
- contact[0].textContent = siteContent["contact"]["address"]
- contact[1].textContent = siteContent["contact"]["phone"]
- contact[2].textContent = siteContent["contact"]["email"]
-
-
- const contactHeader = document.querySelector(".contact h4")
- contactHeader.textContent = siteContent["contact"]["contact-h4"]
+ //middle info paragraphs
 
  const mainHeader = document.querySelectorAll(".text-content h4")
+ const bottomContent= document.querySelectorAll(".bottom-content .text-content h4")
+ 
  const mainP = document.querySelectorAll(".text-content p")
 
  mainHeader[0].textContent = siteContent["main-content"]["features-h4"]
@@ -80,9 +92,7 @@ let accent = document.getElementById("middle-img")
  mainHeader[1].textContent = siteContent["main-content"]["about-h4"]
  mainP[1].textContent = siteContent["main-content"]["about-content"]
 
-
-
- mainHeader[2].textContent = siteContent["main-content"]["services-h4"]
+ bottomContent[2].textContent = siteContent["main-content"]["services-h4"]
  mainP[2].textContent = siteContent["main-content"]["services-content"]
 
  mainHeader[3].textContent = siteContent["main-content"]["product-h4"]
@@ -91,28 +101,19 @@ let accent = document.getElementById("middle-img")
  mainHeader[4].textContent = siteContent["main-content"]["vision-h4"]
  mainP[4].textContent = siteContent["main-content"]["vision-content"]
 
-
-//navbar
-const navArr = document.body.querySelectorAll('a');
-
-navArr[0].textContent = 'Services';
-navArr[1].textContent = 'Product';
-navArr[2].textContent = 'Vision';
-navArr[3].textContent = 'Features';
-navArr[4].textContent = 'About';
-navArr[5].textContent = 'Contact';
-
-let headline = document.getElementByTag('h1')
-  headline.setAttribute = ('src', siteContent["cta"]["h1"])
-
+//let headline = document.getElementByTag('h1')
+ // headline.setAttribute = ('src', siteContent["cta"]["h1"])
  
-//button
-  const button = document.querySelector("button");
-  button.textContent = "Get Started";
+ //contact
 
-  //title
-  const title = document.querySelector("h1");
-  title.textContent = siteContent["cta"]["h1"];
+ const contactHeader = document.querySelector(".contact h4")
+ contactHeader.textContent = siteContent["contact"]["contact-h4"]
+
+ const contact = document.querySelectorAll(".contact p");
+ contact[0].textContent = siteContent["contact"]["address"]
+ contact[1].textContent = siteContent["contact"]["phone"]
+ contact[2].textContent = siteContent["contact"]["email"]
+
 
   //Paragraphs
   const contentPar = document.querySelectorAll('.main-content p');
@@ -123,10 +124,7 @@ let headline = document.getElementByTag('h1')
 
 
 
-
-
-
- const footer = document.querySelector("footer p");
+  const footer = document.querySelector("footer p");
  footer.textContent = siteContent["footer"]["copyright"]
 
 
