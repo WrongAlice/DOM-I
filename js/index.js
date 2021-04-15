@@ -80,6 +80,14 @@ let accent = document.getElementById("middle-img")
  accent.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
  //middle info paragraphs
+  //Paragraphs
+  const contentPar = document.querySelectorAll('.main-content p');
+  contentPar[0].textContent = siteContent['main-content']['features-content']
+  contentPar[1].textContent = siteContent['main-content']['about-content']
+  contentPar[2].textContent = siteContent['main-content']['services-content']
+  contentPar[3].textContent = siteContent['main-content']['product-content']
+  contentPar[4].textContent = siteContent['main-content']['main-content']
+
 
  const mainHeader = document.querySelectorAll(".text-content h4")
  const bottomContent= document.querySelectorAll(".bottom-content .text-content h4")
@@ -92,7 +100,7 @@ let accent = document.getElementById("middle-img")
  mainHeader[1].textContent = siteContent["main-content"]["about-h4"]
  mainP[1].textContent = siteContent["main-content"]["about-content"]
 
- bottomContent[2].textContent = siteContent["main-content"]["services-h4"]
+ mainHeader[2].textContent = siteContent["main-content"]["services-h4"]
  mainP[2].textContent = siteContent["main-content"]["services-content"]
 
  mainHeader[3].textContent = siteContent["main-content"]["product-h4"]
@@ -115,12 +123,7 @@ let accent = document.getElementById("middle-img")
  contact[2].textContent = siteContent["contact"]["email"]
 
 
-  //Paragraphs
-  const contentPar = document.querySelectorAll('.main-content p');
-  contentPar[0].textContent = siteContent['main-content']['features-content']
-  contentPar[1].textContent = siteContent['main-content']['about-content']
-  contentPar[2].textContent = siteContent['main-content']['main-content']
-  contentPar[3].textContent = siteContent['main-content']['product-content']
+ 
 
 
 
