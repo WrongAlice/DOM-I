@@ -86,7 +86,7 @@ let accent = document.getElementById("middle-img")
   contentPar[1].textContent = siteContent['main-content']['about-content']
   contentPar[2].textContent = siteContent['main-content']['services-content']
   contentPar[3].textContent = siteContent['main-content']['product-content']
-  contentPar[4].textContent = siteContent['main-content']['main-content']
+  contentPar[4].textContent = siteContent['main-content']['vision-content']
 
 
  const mainHeader = document.querySelectorAll(".text-content h4")
