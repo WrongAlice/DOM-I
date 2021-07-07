@@ -125,7 +125,7 @@ let headline = document.getElementByTag('h1')
 
 
 
-  const footer = document.querySelector("footer p");
+  const footer = document.querySelector(".footer p");
  footer.textContent = siteContent["footer"]["copyright"]
 
 
